@@ -3,13 +3,11 @@ package model;
 public class CarLogic {
 	
 	public static double milesToEmpty(Car c) {
-		// todo
-		return 0.0;
+		return c.getMpg() * c.getFuel();
 	}
 	
 	public static double timeToEmpty(Car c) {
-		// todo
-		return 0.0;
+		return milesToEmpty(c) / c.getSpeed();
 	}
 	
 	

@@ -20,11 +20,14 @@ public class Car {
 	}
 
 	public void accelerate(double mph) {
-		// todo
+		speed = speed + mph;
 	}
 	
 	public void decelerate(double mph) {
-		// todo
+		speed = speed - mph;
+		if (speed < 0) {
+			speed = 0;
+		}
 	}
 
 	public String getMake() {
