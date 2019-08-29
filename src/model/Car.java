@@ -19,10 +19,18 @@ public class Car {
 		this.fuel = fuel;
 	}
 
+	/**
+	 * Increases speed of car
+	 * @param mph to add to speed
+	 */
 	public void accelerate(double mph) {
 		speed = speed + mph;
 	}
 	
+	/**
+	 * Decreases speed of car
+	 * @param mph to subtract from speed
+	 */
 	public void decelerate(double mph) {
 		speed = speed - mph;
 		if (speed < 0) {
